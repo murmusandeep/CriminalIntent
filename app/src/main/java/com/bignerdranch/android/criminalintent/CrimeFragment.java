@@ -15,6 +15,9 @@ import android.widget.EditText;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import java.text.DateFormat;
+import java.util.Calendar;
+
 public class CrimeFragment extends Fragment {
 
     private Crime mCrime;
@@ -49,6 +52,7 @@ public class CrimeFragment extends Fragment {
                 // This one too
             }
         });
+
 
         mDateButton = (Button) v.findViewById(R.id.crime_date);
         mDateButton.setText(mCrime.getDate().toString());
